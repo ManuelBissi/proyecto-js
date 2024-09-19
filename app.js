@@ -1,7 +1,15 @@
+// Array para almacenar los nombres de los productos
+let productosComprados = [];
+
 // Función para capturar la entrada del usuario
 function obtenerDatosCompra() {
     let cantidad = prompt("Ingrese la cantidad de productos:");
-    let precioUnitario = prompt("Ingrese el precio unitario del producto expresado en numero sin signos:");
+    let precioUnitario = prompt("Ingrese el precio unitario del producto expresado en número sin signos:");
+    let nombreProducto = prompt("Ingrese el nombre del producto:");
+
+    // Guardar el nombre del producto en el array
+    productosComprados.push(nombreProducto);
+
     return { cantidad: parseInt(cantidad), precioUnitario: parseFloat(precioUnitario) };
 }
 
@@ -39,6 +47,9 @@ function simuladorCompra() {
 
         continuar = confirm("¿Desea realizar otra compra?");
     }
+
+    // Mostrar la lista de productos comprados
+    alert("Productos comprados: " + productosComprados.join(", "));
 
     alert("Gracias por usar el simulador.");
 }
