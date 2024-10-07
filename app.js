@@ -65,8 +65,17 @@ function actualizarCarrito() {
 
     productosComprados.forEach(producto => {
         const li = document.createElement('li');
-        li.classList.add('list-group-item');
-        li.textContent = `${producto.nombre} - Cantidad: ${producto.cantidad}, Precio Unitario: $${producto.precio}`;
+        li.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+
+        // Agregar los botones "+" y "-" para aumentar/disminuir cantidad
+        li.innerHTML = `
+            ${producto.nombre} - Cantidad: ${producto.cantidad}, Precio Unitario: $${producto.precio}
+            <div>
+                <button class="btn btn-sm btn-danger" onclick="disminuirCantidad(${producto.id})">-</button>
+                <button class="btn btn-sm btn-success ms-2" onclick="aumentarCantidad(${producto.id})">+</button>
+            </div>
+        `;
+
         listaProductos.appendChild(li);
     });
 
@@ -74,6 +83,34 @@ function actualizarCarrito() {
     let total = calcularTotal();
     document.getElementById('total-compra').textContent = `Total a pagar: $${total.total} (Descuento aplicado: $${total.descuento})`;
 }
+
+function aumentarCantidad(productoId) {
+    const producto = productosComprados.find(p => p.id === productoId);
+    if (producto) {
+        producto.cantidad += 1;
+    }
+
+    // Actualizar el carrito y localStorage
+    actualizarCarrito();
+    guardarEnLocalStorage();
+}
+
+function disminuirCantidad(productoId) {
+    const producto = productosComprados.find(p => p.id === productoId);
+    if (producto) {
+        if (producto.cantidad > 1) {
+            producto.cantidad -= 1;
+        } else {
+            // Si la cantidad es 1 y se presiona "-", eliminar el producto del carrito
+            productosComprados = productosComprados.filter(p => p.id !== productoId);
+        }
+    }
+
+    // Actualizar el carrito y localStorage
+    actualizarCarrito();
+    guardarEnLocalStorage();
+}
+
 
 // Función para calcular el total de la compra
 function calcularTotal() {
