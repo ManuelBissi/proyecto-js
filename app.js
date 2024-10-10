@@ -1,10 +1,35 @@
 // Array de productos disponibles
 const productosDisponibles = [
-    { id: 1, nombre: "Producto 1", descripcion: "Descripción breve del producto 1", precio: 100 },
-    { id: 2, nombre: "Producto 2", descripcion: "Descripción breve del producto 2", precio: 150 },
-    { id: 3, nombre: "Producto 3", descripcion: "Descripción breve del producto 3", precio: 200 },
-    { id: 4, nombre: "Producto 4", descripcion: "Descripción breve del producto 4", precio: 250 }
+    {
+        id: 1,
+        img: "img/img1.png",
+        nombre: "Reloj Andino",
+        descripcion: "Fabricado en Suiza",
+        precio: 100
+    },
+    {
+        id: 2,
+        img: "img/img2.png", 
+        nombre: "Reloj Polinesia",
+        descripcion: "Fabricado en China",
+        precio: 150
+    },
+    {
+        id: 3,
+        img: "img/img3.png", 
+        nombre: "Reloj Catamarca",
+        descripcion: "Fabricado en Suiza",
+        precio: 200
+    },
+    {
+        id: 4,
+        img: "img/img4.png", 
+        nombre: "Reloj Comodoro",
+        descripcion: "Fabricado en Suiza",
+        precio: 250
+    }
 ];
+
 
 // Array para almacenar los productos comprados
 let productosComprados = JSON.parse(localStorage.getItem('productos')) || [];
@@ -21,7 +46,8 @@ function mostrarProductos() {
         col.innerHTML = `
             <div class="card h-100">
                 <div class="card-body">
-                    <h5 class="card-title">${producto.nombre}</h5>
+                    <img src="${producto.img}" class="card-img-top" alt="${producto.nombre}">
+                    <h2 class="card-title">${producto.nombre}</h2>
                     <p class="card-text">${producto.descripcion}</p>
                     <p class="card-text fw-bold">$${producto.precio}</p>
                     <button class="btn btn-primary" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
