@@ -1,0 +1,53 @@
+/* Estilo del header */
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url('/img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Capa difuminada */
+    z-index: 1;
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Estilo del navbar */
+.navbar {
+    z-index: 3;
+}
+
+/* Estilo del offcanvas */
+.offcanvas {
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro solo para el menú */
+    color: white;
+}
+
+.offcanvas-body {
+    padding: 2rem;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Ajustes del botón hamburguesa */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+}
