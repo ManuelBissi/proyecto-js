@@ -2,57 +2,57 @@
     {
         "id": 1,
         "img": "img/img1.png",
-        "nombre": "Reloj Andino",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 100
+        "nombre": "DJI 4 pro",
+        "descripcion": "Fabricado en china",
+        "precio": 1000
     },
     {
         "id": 2,
         "img": "img/img2.png",
-        "nombre": "Reloj Polinesia",
-        "descripcion": "Fabricado en China",
-        "precio": 150
+        "nombre": "Google VR",
+        "descripcion": "Fabricado en canada",
+        "precio": 1500
     },
     {
         "id": 3,
         "img": "img/img3.png",
-        "nombre": "Reloj Catamarca",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 200
+        "nombre": "Pantalla curva 50'",
+        "descripcion": "Fabricado en china",
+        "precio": 2000
     },
     {
         "id": 4,
         "img": "img/img4.png",
-        "nombre": "Reloj Comodoro",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 250
+        "nombre": "Iphone 15",
+        "descripcion": "Fabricado en china",
+        "precio": 1800
     },
     {
         "id": 4,
-        "img": "img/img4.png",
-        "nombre": "Reloj Comodoro",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 250
+        "img": "img/img5.png",
+        "nombre": "Apple watch",
+        "descripcion": "Fabricado en china",
+        "precio": 1200
     },
     {
         "id": 4,
-        "img": "img/img4.png",
-        "nombre": "Reloj Comodoro",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 250
+        "img": "img/img6.webp",
+        "nombre": "Tablet android",
+        "descripcion": "Fabricado en china",
+        "precio": 1100
     },
     {
         "id": 4,
-        "img": "img/img4.png",
-        "nombre": "Reloj Comodoro",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 250
+        "img": "img/img7.png",
+        "nombre": "Airpods pro",
+        "descripcion": "Fabricado en china",
+        "precio": 800
     },
     {
         "id": 4,
-        "img": "img/img4.png",
-        "nombre": "Reloj Comodoro",
-        "descripcion": "Fabricado en Suiza",
-        "precio": 250
+        "img": "img/img8.png",
+        "nombre": "PS4",
+        "descripcion": "Fabricado en china",
+        "precio": 1400
     }
 ]
