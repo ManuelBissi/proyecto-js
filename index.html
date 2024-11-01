@@ -64,7 +64,7 @@
                     </div>
                     <div class="modal-body">
                         <ul id="lista-productos" class="list-group mb-3">
-                            <!-- Productos agregados aparecerán acá -->
+                            
                         </ul>
                         <p id="total-compra" class="fw-bold"></p>
                     </div>
@@ -73,7 +73,9 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
         
 
@@ -123,6 +125,36 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal para los Datos del Cliente -->
+<div class="modal fade" id="modalDatosCliente" tabindex="-1" aria-labelledby="modalDatosClienteLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalDatosClienteLabel">Datos del Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formDatosCliente">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Concluir Compra</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <footer class="bg-dark text-white py-4">
         <div class="container">

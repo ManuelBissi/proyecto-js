@@ -61,7 +61,7 @@ function actualizarContadorCarrito() {
     const totalProductos = productosComprados.reduce((acc, producto) => acc + producto.cantidad, 0);
 
     contadorCarrito.textContent = totalProductos;
-    
+
     if (totalProductos === 0) {
         contadorCarrito.classList.add('d-none');
     } else {
@@ -148,26 +148,30 @@ function calcularTotal() {
     return { total, descuento };
 }
 
-function guardarEnLocalStorage() {
-    localStorage.setItem('productos', JSON.stringify(productosComprados));
-}
-
-function mostrarMensaje(tipo, mensaje) {
-    const divMensaje = document.getElementById('mensaje');
-    divMensaje.innerHTML = `<div class="alert alert-${tipo}">${mensaje}</div>`;
-    setTimeout(() => {
-        divMensaje.innerHTML = '';
-    }, 3000);
-}
 
 document.getElementById('finalizarCompra').addEventListener('click', () => {
+    const modalCarrito = new bootstrap.Modal(document.getElementById('modalCarrito'));
+    modalCarrito.hide();
+    const modalDatosCliente = new bootstrap.Modal(document.getElementById('modalDatosCliente'));
+    modalDatosCliente.show();
+});
+
+
+document.getElementById('formDatosCliente').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    
+    const nombre = document.getElementById('nombre').value;
+    const direccion = document.getElementById('direccion').value;
+    const telefono = document.getElementById('telefono').value;
+
     if (productosComprados.length === 0) {
         mostrarMensaje('danger', 'El carrito está vacío.');
         return;
     }
 
     const total = calcularTotal();
-    document.getElementById('resumenCompra').textContent = `Total: $${total.total} (Descuento: $${total.descuento})`;
+    document.getElementById('resumenCompra').textContent = `Gracias por tu compra ${nombre}! Total: $${total.total} (Descuento: $${total.descuento})`;
 
     const modal = new bootstrap.Modal(document.getElementById('modalCompra'));
     modal.show();
@@ -175,7 +179,20 @@ document.getElementById('finalizarCompra').addEventListener('click', () => {
     productosComprados = [];
     guardarEnLocalStorage();
     actualizarCarrito();
+
+        
+        const modalDatosCliente = bootstrap.Modal.getInstance(document.getElementById('modalDatosCliente'));
+        modalDatosCliente.hide();
+
 });
+
+
+
+
+function guardarEnLocalStorage() {
+    localStorage.setItem('productos', JSON.stringify(productosComprados));
+}
+
 
 
 actualizarCarrito();
