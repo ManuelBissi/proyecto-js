@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini E-Commerce</title>
+    <title>Techverse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -17,7 +17,7 @@
     <header class="header d-flex flex-column">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
             <div class="container">
-                <a class="navbar-brand" href="#">Mi Sitio</a>
+                <a class="navbar-brand" href="#">Techverse</a>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 </button>
         
                 <!-- Botón del Carrito -->
-                <button class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#modalCarrito">
+                <button class="btn btn-outline-light ms-3 boton" data-bs-toggle="modal" data-bs-target="#modalCarrito">
                     <i class="bi bi-cart-fill"></i> Carrito
                     <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
                 </button>
@@ -34,8 +34,8 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h2>
+                    <button type="button" class="btn-close text-reset boton" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -54,76 +54,96 @@
             </div>
         </nav>
         
-        <!-- Modal del Carrito -->
-        <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <ul id="lista-productos" class="list-group mb-3">
-                            
-                        </ul>
-                        <p id="total-compra" class="fw-bold"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button id="finalizarCompra" class="btn btn-success">Finalizar Compra</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </div>
-        
-
         <div class="container mt-5">
             <div class="row align-items-center vh-100">
                 <div class="col-md-6 text-white">
-                    <h1 class="display-4">Bienvenidos a Mi Sitio</h1>
+                    <h1 class="display-4">Bienvenidos a Techverse</h1>
                     <p class="lead">
-                        Ofrecemos los mejores productos para satisfacer tus necesidades. Explora nuestros servicios y
-                        descubre más.
+                        Ofrecemos los mejores productos para satisfacer tus necesidades. Explora nuestros servicios y descubre más span 👇🏻
                     </p>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <img src="imagen-derecha.jpg" class="img-fluid rounded" alt="Imagen decorativa">
+                    <img src="img/pc.png" class="img-fluid rounded" alt="Imagen decorativa">
                 </div>
             </div>
         </div>
     </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4CD8E1" fill-opacity="1" d="M0,288L0,256L205.7,256L205.7,160L411.4,160L411.4,64L617.1,64L617.1,64L822.9,64L822.9,288L1028.6,288L1028.6,128L1234.3,128L1234.3,96L1440,96L1440,0L1234.3,0L1234.3,0L1028.6,0L1028.6,0L822.9,0L822.9,0L617.1,0L617.1,0L411.4,0L411.4,0L205.7,0L205.7,0L0,0L0,0Z"></path></svg>
+    <main>
+        
+<section class="color">
+    <div class="container my-5 py-4">
+    <div class="row align-items-center">
+        
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="img/impo.jpg" alt="Imagen de la empresa" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-start">
+            <h2 class="display-6 fw-bold mb-3">Quiénes Somos</h2>
+            <p class="text-muted fs-5">Somos una empresa líder en la importación y venta de productos tecnológicos de última generación en Argentina. Trabajamos con marcas reconocidas a nivel mundial para ofrecer a nuestros clientes soluciones innovadoras en dispositivos electrónicos, desde smartphones y laptops hasta equipos especializados. Nuestra misión es hacer accesible la tecnología más avanzada, brindando asesoramiento personalizado, precios competitivos y un servicio postventa de calidad para satisfacer las necesidades de consumidores y empresas en todo el país. En un mercado en constante cambio, estamos comprometidos en ser el nexo confiable entre el mundo de la tecnología y nuestros clientes.</p>
+
+        </div>
+    </div>
+</div>
+</section>
 
 
+<section id="intro-ecommerce" class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Descubre Nuestros Productos Exclusivos</h2>
+        <p class="lead mb-4">Sumérgete en una experiencia de compra única donde la calidad y el estilo se encuentran. Explora nuestra selección de productos innovadores y encuentra lo que necesitas para mejorar tu vida cotidiana.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/relo.png" alt="Imagen de producto" class="img-fluid rounded shadow-sm mb-4" width="50%">
+                <h2 class="mb-2">Calidad Garantizada</h2>
+                <p>Todos nuestros productos son seleccionados con rigurosidad para ofrecerte solo lo mejor.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="img/iphone.png" alt="Imagen de producto" class="img-fluid rounded shadow-sm mb-4" width="25%">
+                <h2 class="mb-2">Soporte 24/7</h2>
+                <p>Nuestro equipo está disponible para ayudarte en cualquier momento, asegurando tu satisfacción.</p>
+            </div>
+        </div>
 
+    </div>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4CD8E1" fill-opacity="1" d="M0,288L0,256L205.7,256L205.7,160L411.4,160L411.4,64L617.1,64L617.1,64L822.9,64L822.9,288L1028.6,288L1028.6,128L1234.3,128L1234.3,96L1440,96L1440,0L1234.3,0L1234.3,0L1028.6,0L1028.6,0L822.9,0L822.9,0L617.1,0L617.1,0L411.4,0L411.4,0L205.7,0L205.7,0L0,0L0,0Z"></path></svg>
 
 
     <div class="container mt-5">
-        <h1 class="text-center">E-Commerce</h1>
+        <h2 class="text-center mb-4 fs-1 ">Explora nuestros productos</h2>
 
         <!--productos disponibles-->
         <div class="row" id="productos-disponibles">
         
         </div>
 
-        <!--Modal-->
-        <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title" id="modalCompraLabel">Resumen de la compra</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p id="resumenCompra"></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+        
+
+        <!-- Modal del Carrito -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1" aria-labelledby="modalCarritoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalCarritoLabel">Carrito de Compras</h2>
+                    <button type="button" class="btn-close boton" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="lista-productos" class="list-group mb-3">
+                        
+                    </ul>
+                    <p id="total-compra" class="fw-bold"></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="finalizarCompra" class="btn btn-success boton">Finalizar Compra</button>
+                    <button type="button" class="btn btn-secondary boton" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+            
         </div>
+        
     </div>
 
     <!-- Modal para los Datos del Cliente -->
@@ -131,8 +151,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalDatosClienteLabel">Datos del Cliente</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h2 class="modal-title" id="modalDatosClienteLabel">Datos del Cliente</h2>
+                <button type="button" class="btn-close boton" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form id="formDatosCliente">
@@ -148,20 +168,39 @@
                         <label for="telefono" class="form-label">Teléfono</label>
                         <input type="tel" class="form-control" id="telefono" required>
                     </div>
-                    <button type="submit" class="btn btn-success">Concluir Compra</button>
+                    <button type="submit" class="btn btn-success boton">Concluir Compra</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
+<!--Modal-->
+<div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="modalCompraLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalCompraLabel">Resumen de la compra</h2>
+                <button type="button" class="btn-close boton" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="resumenCompra"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary boton" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
-    <footer class="bg-dark text-white py-4">
+</main>
+    <footer class=" text-white py-4">
         <div class="container">
             <div class="row">
                 
                 <div class="col-md-6 mb-3">
-                    <h5>Nosotros</h5>
+                    <h2>Nosotros</h2>
                     <p>
                         Somos una empresa que vende productos tecnológicos innovadores para facilitar la vida cotidiana.
                         Ofrecemos productos de alta calidad, enfocados en la eficiencia y el diseño.
@@ -170,7 +209,7 @@
 
                 
                 <div class="col-md-6">
-                    <h5>Información de Contacto</h5>
+                    <h2>Información de Contacto</h2>
                     <ul class="list-unstyled">
                         <li><strong>Teléfono:</strong> +54 9 291 512-9022</li>
                         <li><strong>Dirección:</strong> Av. Siempre Viva 123, Buenos Aires, Argentina</li>
@@ -181,6 +220,8 @@
             </div>
         </div>
     </footer>
+
+    
 
 
     <!-- Bootstrap -->

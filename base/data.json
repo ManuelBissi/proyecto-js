@@ -26,5 +26,33 @@
         "nombre": "Reloj Comodoro",
         "descripcion": "Fabricado en Suiza",
         "precio": 250
+    },
+    {
+        "id": 4,
+        "img": "img/img4.png",
+        "nombre": "Reloj Comodoro",
+        "descripcion": "Fabricado en Suiza",
+        "precio": 250
+    },
+    {
+        "id": 4,
+        "img": "img/img4.png",
+        "nombre": "Reloj Comodoro",
+        "descripcion": "Fabricado en Suiza",
+        "precio": 250
+    },
+    {
+        "id": 4,
+        "img": "img/img4.png",
+        "nombre": "Reloj Comodoro",
+        "descripcion": "Fabricado en Suiza",
+        "precio": 250
+    },
+    {
+        "id": 4,
+        "img": "img/img4.png",
+        "nombre": "Reloj Comodoro",
+        "descripcion": "Fabricado en Suiza",
+        "precio": 250
     }
 ]

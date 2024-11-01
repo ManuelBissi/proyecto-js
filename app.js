@@ -22,13 +22,13 @@ function mostrarProductos(productosDisponibles) {
         col.classList.add('col-md-3', 'mb-4');
 
         col.innerHTML = `
-            <div class="card h-100">
+            <div class="card h-100 bordes">
                 <img src="${producto.img}" class="card-img-top" alt="${producto.nombre}">
                 <div class="card-body">
                     <h2 class="card-title">${producto.nombre}</h2>
                     <p class="card-text">${producto.descripcion}</p>
                     <p class="card-text fw-bold">$${producto.precio}</p>
-                    <button class="btn btn-primary" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
+                    <button class="btn btn-primary boton" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
                 </div>
             </div>
         `;

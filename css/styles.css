@@ -1,4 +1,4 @@
-/* Estilo del header */
+
 .header {
     position: relative;
     height: 100vh;
@@ -20,19 +20,49 @@
     z-index: 1;
 }
 
+
+h2{
+    color: #040D12;
+}
+h3{
+    color: #040D12;
+}
+main {
+    margin-top: -100px; /* Ajusta el valor según sea necesario */
+}
+
+.boton{
+    background-color: #E8DF64;
+    border: solid #E8DF64 ;
+    color: #040D12;
+}
+.boton:hover{
+    background-color: #fff563;
+    border: solid #E8DF64 ;
+    color: #040D12;
+}
+
+.bordes{
+    border: solid #4CD8E1;
+    background-color: #232424;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+
+
 .header .container {
     position: relative;
     z-index: 2;
 }
 
-/* Estilo del navbar */
 .navbar {
     z-index: 3;
 }
 
-/* Estilo del offcanvas */
+
 .offcanvas {
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro solo para el menú */
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
 }
 
@@ -46,8 +76,10 @@
     font-size: 1.2rem;
 }
 
-/* Ajustes del botón hamburguesa */
 .navbar-toggler {
     border-color: rgba(255, 255, 255, 0.5);
     margin-right: 10px;
+}
+footer{
+    background-color: #040D12;
 }
