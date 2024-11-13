@@ -28,28 +28,28 @@
         "precio": 1800
     },
     {
-        "id": 4,
+        "id": 5,
         "img": "img/img5.png",
         "nombre": "Apple watch",
         "descripcion": "Fabricado en china",
         "precio": 1200
     },
     {
-        "id": 4,
+        "id": 6,
         "img": "img/img6.webp",
         "nombre": "Tablet android",
         "descripcion": "Fabricado en china",
         "precio": 1100
     },
     {
-        "id": 4,
+        "id": 7,
         "img": "img/img7.png",
         "nombre": "Airpods pro",
         "descripcion": "Fabricado en china",
         "precio": 800
     },
     {
-        "id": 4,
+        "id": 8,
         "img": "img/img8.png",
         "nombre": "PS4",
         "descripcion": "Fabricado en china",
