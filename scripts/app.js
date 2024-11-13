@@ -83,5 +83,4 @@ function actualizarContadorCarrito() {
 
 
 
-    actualizarCarrito();
     actualizarContadorCarrito();
