@@ -83,6 +83,7 @@ function calcularTotal() {
 document.getElementById('finalizarCompra').addEventListener('click', () => {
     const modalCarrito = new bootstrap.Modal(document.getElementById('modalCarrito'));
     modalCarrito.hide();
+
     const modalDatosCliente = new bootstrap.Modal(document.getElementById('modalDatosCliente'));
     modalDatosCliente.show();
 });
