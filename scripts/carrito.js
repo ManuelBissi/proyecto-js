@@ -19,7 +19,6 @@ function actualizarCarrito() {
     });
 }
 
-
 function aumentarCantidad(productoId) {
     const producto = productosComprados.find(p => p.id === productoId);
     if (producto) {
